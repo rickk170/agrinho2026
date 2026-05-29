@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Agrinho 2026 | Inovação no Campo</title>
+    <title>Do Campo ao Copo | Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container nav-container">
-            <h1 class="logo">🌱 Agrinho<span>2026</span></h1>
+            <h1 class="logo">🌱 Do Campo ao <span>Copo</span></h1>
             <nav>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre o Projeto</a></li>
-                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#sistema">Sistema (Nível 4)</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,17 +22,36 @@
     <main>
         <section id="inicio" class="hero">
             <div class="container">
-                <h2>Tecnologia e Sustentabilidade de Mãos Dadas</h2>
-                <p>Explorando soluções de programação para o futuro do agronegócio e a preservação do meio ambiente.</p>
-                <button id="btn-explorar" class="btn-primario">Explorar o Projeto</button>
+                <h2>Rastreabilidade e Sustentabilidade</h2>
+                <p>Acompanhe a jornada do alimento, garantindo economia de recursos e transparência para o consumidor final.</p>
             </div>
         </section>
-        <div class="form-area">
-                    <h3>Registrar Novo Plantio (Rastreável)</h3>
+
+        <section id="sistema" class="container sec-espacamento">
+            <h2 class="titulo-secao">Painel de Gestão Agrícola</h2>
+            
+            <div class="dashboard">
+                <div class="card-stat">
+                    <h4>Área Total Plantada</h4>
+                    <p id="stat-area">0 ha</p>
+                </div>
+                <div class="card-stat">
+                    <h4>Estimativa de Produção</h4>
+                    <p id="stat-producao">0 Toneladas</p>
+                </div>
+                <div class="card-stat destaque-eco">
+                    <h4>Água Poupada (Gotejamento)</h4>
+                    <p id="stat-agua">0 Litros</p>
+                </div>
+            </div>
+
+            <div class="app-container">
+                <div class="form-area">
+                    <h3>Registrar Novo Lote</h3>
                     <form id="form-plantio">
                         <div class="input-group">
-                            <label for="cultura">Tipo de Cultura (ex: Soja, Café, Trigo):</label>
-                            <input type="text" id="cultura" required>
+                            <label for="cultura">Cultura (Soja, Milho, Café):</label>
+                            <input type="text" id="cultura" placeholder="Ex: Soja" required>
                         </div>
                         <div class="input-group">
                             <label for="area">Área Plantada (Hectares):</label>
@@ -44,11 +62,11 @@
                             <input type="date" id="data" required>
                         </div>
                         <div class="input-group">
-                            <label for="irrigacao">Método de Irrigação (Impacto Hídrico):</label>
+                            <label for="irrigacao">Método de Irrigação:</label>
                             <select id="irrigacao" required>
-                                <option value="gotejamento">Gotejamento (Alta Economia de Água)</option>
+                                <option value="gotejamento">Gotejamento (Alta Economia)</option>
                                 <option value="aspersao">Aspersão (Consumo Médio)</option>
-                                <option value="chuva">Sequeiro / Apenas Chuva (Natural)</option>
+                                <option value="chuva">Apenas Chuva (Natural)</option>
                             </select>
                         </div>
                         <button type="submit" class="btn-primario">Gerar Lote Rastreável</button>
@@ -56,13 +74,13 @@
                 </div>
 
                 <div class="dados-area">
-                    <h3>Lotes Produzidos (Do Campo ao Copo)</h3>
+                    <h3>Rastreabilidade da Safra</h3>
                     <div class="table-responsive">
                         <table id="tabela-registros">
                             <thead>
                                 <tr>
                                     <th>Cód. Rastreio</th>
-                                    <th>Cultura</th>
+                                    <th>Cultura / Área</th>
                                     <th>Sustentabilidade</th>
                                     <th>Ação</th>
                                 </tr>
@@ -72,25 +90,13 @@
                         </table>
                     </div>
                 </div>
-
-        <section id="sobre" class="container sec-espacamento">
-            <h2 class="titulo-secao">O Papel do Agro</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>🌾 Agricultura Inteligente</h3>
-                    <p>O uso de dados e sensores para otimizar o plantio, economizar água e aumentar a produtividade de forma sustentável.</p>
-                </div>
-                <div class="card">
-                    <h3>🚜 Automação</h3>
-                    <p>Como a robótica e a programação estão ajudando pequenos e grandes produtores a cuidar da terra com mais eficiência.</p>
-                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Projeto de Programação - Agrinho. Desenvolvido para transformar o campo.</p>
+            <p>&copy; 2026 Projeto Agrinho - Do Campo ao Copo. Desenvolvido por Julio, Laia, Ryan, Gusthavo e Piu.</p>
         </div>
     </footer>
 
