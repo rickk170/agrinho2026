@@ -147,3 +147,37 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+/* Estilos para o Select */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.input-group select:focus {
+    outline: none;
+    border-color: var(--verde-claro);
+    box-shadow: 0 0 5px rgba(129, 199, 132, 0.5);
+}
+
+/* Selos de Rastreio e Sustentabilidade */
+.badge-rastreio {
+    background-color: var(--marrom-terra);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.badge-sustentavel {
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
